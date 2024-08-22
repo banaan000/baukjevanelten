@@ -315,8 +315,8 @@ main {
 
 .button-container {
     display: flex;
-    justify-content: space-between; /* Distribute space evenly between buttons */
-    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally within the container */
     gap: 10px; /* Space between buttons */
     margin-bottom: 40px; /* Space below the button container */
 }
