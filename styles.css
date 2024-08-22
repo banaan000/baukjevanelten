@@ -8,7 +8,7 @@ html, body {
 
 body {
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
 }
@@ -151,27 +151,6 @@ nav ul li a.selected {
     padding: 13px;
 }
 
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    header {
-        padding: 10px;
-    }
-
-    .header-content {
-        flex-direction: column; /* Stack logo and nav items vertically */
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack nav items vertically on smaller screens */
-    }
-
-    .nav-container {
-        margin-top: 10px;
-    }
-}
-
 main {
     flex: 1;
     display: flex;
@@ -255,29 +234,6 @@ main {
     margin-left: 0px;
 }
 
-/* Responsive adjustments for bottom section */
-@media (max-width: 768px) {
-    .bottom-content {
-        flex-direction: column; /* Stack bottom content vertically on mobile */
-    }
-
-    .bottom-right {
-        margin-top: 20px;
-        width: 100%; /* Full width on mobile */
-    }
-
-    .contact-info {
-        flex-direction: row; /* Align horizontally on mobile */
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-}
-
-
-
-
 .spacer {
     margin-bottom: 20px;
 }
@@ -356,18 +312,13 @@ main {
     background-size: cover;
 }
 
-/* Responsive adjustments for background images */
-@media (max-width: 768px) {
-    .home-page,
-    .massagetherapie-page,
-    .hathayoga-page,
-    .workshops-page,
-    .overmij-page,
-    .contact-page,
-    .onlineyoga-page {
-        background-position: 25% 75%;
-        background-size: cover; /* Ensure the image covers the background */
-    }
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 40px; /* Space below the button container */
 }
 
 /* General Button Styling */
@@ -439,4 +390,66 @@ main {
     src: url('fonts/UglyQua.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
+}
+
+/* Responsive adjustments for bottom section */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .header-content {
+        flex-direction: column; /* Stack logo and nav items vertically */
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically on smaller screens */
+    }
+
+    .nav-container {
+        margin-top: 10px;
+    }
+    
+    .bottom-content {
+        flex-direction: column; /* Stack bottom content vertically on mobile */
+    }
+
+    .bottom-right {
+        margin-top: 20px;
+        width: 100%; /* Full width on mobile */
+    }
+
+    .contact-info {
+        flex-direction: row; /* Align horizontally on mobile */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .contact-card {
+        padding: 15px;
+    }
+
+    .social-links {
+        gap: 8px;
+    }
+
+    .social-item {
+        font-size: 20px;
+    }
+    .button {
+        flex: 1 1 auto; /* Allow buttons to grow/shrink and fit within container */
+        margin: 5px 0; /* Vertical spacing on smaller screens */
+    }
+    .home-page,
+    .massagetherapie-page,
+    .hathayoga-page,
+    .workshops-page,
+    .overmij-page,
+    .contact-page,
+    .onlineyoga-page {
+        background-position: 25% 75%;
+        background-size: cover; /* Ensure the image covers the background */
+    }
+
 }
