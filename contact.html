@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baukje van Elten</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --top-section-height: 15vh; /* Custom height for top section */
+            --bottom-section-height: 85vh; /* Custom height for bottom section */
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body class="contact-page">
+    <div class="spacer" style="height:10px;"></div>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/baukjevaneltenlogo.png" alt="Logo" class="logo">
+                </a>
+            </div>            
+            <nav class="nav-container">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="massagetherapie.html">MASSAGETHERAPIE</a></li>
+                    <li><a href="hatha-yoga.html">HATHA YOGA</a></li>
+                    <li><a href="workshops.html">WORKSHOPS</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">MEER..</a>
+                        <ul class="dropdown-content">
+                            <li><a href="over-mij.html">OVER MIJ</a></li>
+                            <li><a href="contact.html" class="selected">CONTACT</a></li>
+                            <li><a href="online-yoga.html" class="selected">ONLINE YOGA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="top-section">
+            <div class="top-content">
+                <h1>CONTACT</h1>
+            </div>
+            <div class="spacer" style="height:5px;"></div>
+        </div>
+        <div class="bottom-section">
+            <div class="bottom-content">
+                <div class="bottom-left">
+                </div>
+                <div class="bottom-center">
+                    <div class="contact-form-container">
+                        <h2 class="content-title">CONTACT FORMULIER</h2>
+                        <div class="spacer" style="height:5px;"></div>
+                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" enctype="multipart/form-data">
+                            <!-- Required hidden fields for Web3Forms -->
+                            <input type="hidden" name="access_key" value="cf83c3ce-f930-4329-8fad-75eba036b451">
+                            <input type="hidden" name="subject" value="Contact formulier ingevuld!">
+                            <input type="hidden" name="from_name" value="formulier op website">
+                            <input type="hidden" name="redirect" value="index.html">
+                            <!-- <input type="checkbox" name="botcheck" style="display: none;"> -->
+                            <!-- <input type="hidden" name="webhook" value="WEBHOOK_URL_HERE">
+                            <input type="hidden" name="recaptcha_response" id="recaptchaResponse"> -->
+                            
+                            <!-- Form fields -->
+                            <div class="form-group">
+                                <label for="first-name">Voornaam <span class="form-required">*</span></label>
+                                <input type="text" id="first-name" name="First Name" required placeholder="Voornaam">
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Achternaam <span class="form-required">*</span></label>
+                                <input type="text" id="last-name" name="Last Name" required placeholder="Achternaam">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefoonnummer <span class="form-required">*</span></label>
+                                <input type="tel" id="phone" name="Phone Number" required placeholder="Telefoonnummer">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail <span class="form-required">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Opmerking <span class="form-required">*</span></label>
+                                <textarea id="message" name="message" required placeholder="Uw opmerking" rows="6"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="button">Verzenden</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+                <div class="bottom-right" style="text-align:left;">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3 class="contact-title">TELEFOON / WHATSAPP</h3>
+                            <p>06 422 65 460</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-title">ADRES</h3>
+                            <p>Julianalaan 70<br>3843 CC Harderwijk</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-title">EMAIL</h3>
+                            <p>baukjevanelten@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+</body>
+</html>
