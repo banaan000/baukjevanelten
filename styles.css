@@ -275,6 +275,9 @@ main {
 
 }
 
+
+
+
 .spacer {
     margin-bottom: 20px;
 }
@@ -351,6 +354,20 @@ main {
 .onlineyoga-page {
     background: url('images/yoga.jpg') no-repeat center center fixed;
     background-size: cover;
+}
+
+/* Responsive adjustments for background images */
+@media (max-width: 768px) {
+    .home-page,
+    .massagetherapie-page,
+    .hathayoga-page,
+    .workshops-page,
+    .overmij-page,
+    .contact-page,
+    .onlineyoga-page {
+        background-position: 25% 75%;
+        background-size: cover; /* Ensure the image covers the background */
+    }
 }
 
 /* General Button Styling */
