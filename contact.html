@@ -11,6 +11,8 @@
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
         <link rel="manifest" href="images/favicon/site.webmanifest">
         <link rel="stylesheet" href="styles.css">
+        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+        <script src="scripts.js"></script>
         <style>
             :root {
                 --top-section-height: 15vh; /* Custom height for top section */
@@ -63,7 +65,7 @@
                     <div class="contact-form-container">
                         <h2 class="content-title">CONTACT FORMULIER</h2>
                         <div class="spacer" style="height:5px;"></div>
-                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" enctype="multipart/form-data">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" enctype="multipart/form-data" id="form1">
                             <!-- Required hidden fields for Web3Forms -->
                             <input type="hidden" name="access_key" value="9e8d8f24-f360-485a-b2d3-cbe438148f61">
                             <input type="hidden" name="subject" value="Contact formulier ingevuld!">
@@ -94,6 +96,7 @@
                                 <label for="message">Opmerking <span class="form-required">*</span></label>
                                 <textarea id="message" name="message" required placeholder="Uw opmerking" rows="6"></textarea>
                             </div>
+                            <div class="h-captcha" data-sitekey="ad94fc9a-2d84-449c-ba64-e0229cd87026"></div>
                             <div class="form-group">
                                 <button type="submit" class="button">Verzenden</button>
                             </div>
