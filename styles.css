@@ -186,8 +186,8 @@ main {
 }
 
 /* Bottom section */
-.bottom-section {
-    background: rgba(255, 255, 255, 0.767);
+.bottom-section-non-transparent {
+    background: rgb(255, 255, 255);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -198,8 +198,8 @@ main {
     flex-shrink: 0;
 }
 
-.bottom-section-non-transparent {
-    background: rgb(255, 255, 255);
+.bottom-section {
+    background: rgba(255, 255, 255, 0.767);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
