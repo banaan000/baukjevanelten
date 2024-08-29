@@ -187,7 +187,7 @@ main {
 
 /* Bottom section */
 .bottom-section-non-transparent {
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255, 1);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
