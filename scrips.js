@@ -14,17 +14,3 @@ window.onclick = function(event) {
         });
     }
 };
-
-const form = document.getElementById('form1');
-
-form.addEventListener('submit', function(e) {
-    const hCaptchaResponse = document.querySelector('textarea[name="h-captcha-response"]').value;
-
-    if (!hCaptchaResponse) {
-        e.preventDefault();
-        alert("Please complete the captcha challenge.");
-        return;
-    }
-
-    document.getElementById('h-captcha-response').value = hCaptchaResponse;
-});

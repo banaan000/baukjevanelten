@@ -198,6 +198,18 @@ main {
     flex-shrink: 0;
 }
 
+.bottom-section-non-transparent {
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
 .bottom-content {
     display: flex;
     justify-content: space-between; /* Space between sections */
@@ -289,12 +301,12 @@ main {
 }
 
 .hathayoga-page {
-    background: url('images/yoga2.jpg') no-repeat center center fixed;
+    background: url('images/yoga3.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 .workshops-page {
-    background: url('images/workshopbg.jpg') no-repeat center center fixed;
+    background: url('images/yoga2.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -305,11 +317,6 @@ main {
 
 .contact-page {
     background: url('images/banner.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
-
-.onlineyoga-page {
-    background: url('images/yoga2.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -447,9 +454,8 @@ main {
     .hathayoga-page,
     .workshops-page,
     .overmij-page,
-    .contact-page,
-    .onlineyoga-page {
-        background-position: 25% 75%;
+    .contact-page{
+        background-position: 75% 50%;
         background-size: cover; /* Ensure the image covers the background */
     }
 
