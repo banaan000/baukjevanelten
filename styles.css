@@ -444,7 +444,7 @@ main {
     .workshops-page,
     .overmij-page,
     .contact-page{
-        background-position: 75% 50%;
+        background-position: 25% 75%;
         background-size: cover; /* Ensure the image covers the background */
     }
 

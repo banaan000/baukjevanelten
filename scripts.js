@@ -20,30 +20,24 @@ document.addEventListener('DOMContentLoaded', function() {
     var encodedUser = 'YmF1a2pldmFuZWx0ZW4='; 
     var encodedDomain = 'Z21haWwuY29t'; 
 
-    // Decoding the Base64 strings
     var phone = atob(encodedPhone);
     var address = atob(encodedAddress);
     var user = atob(encodedUser);
     var domain = atob(encodedDomain);
 
-    // Constructing the full email address
     var contact = user + '@' + domain;
 
-    // Updating the phone number as plain text
     var phoneElement = document.getElementById('phone-code');
-    phoneElement.textContent = phone; // Display phone number as plain text
-    phoneElement.removeAttribute('href'); // Remove href attribute to ensure it is not clickable
+    phoneElement.textContent = phone; 
+    phoneElement.removeAttribute('href'); 
 
-    // Updating the address with line breaks
     var addressElement = document.getElementById('address-code');
-    addressElement.innerHTML = address.replace(/,/g, '<br>'); // Format address with line breaks
+    addressElement.innerHTML = address.replace(/,/g, '<br>'); 
 
-    // Updating the plain text email address
     var contactElement = document.getElementById('contact-code');
-    contactElement.textContent = contact; // Display email address as plain text
-    contactElement.removeAttribute('href'); // Remove href attribute to ensure it is not clickable
+    contactElement.textContent = contact; 
+    contactElement.removeAttribute('href'); 
 
-    // Updating the icon email link
     var iconLink = document.getElementById('icon-code');
     iconLink.href = 'mailto:' + contact;
 });
