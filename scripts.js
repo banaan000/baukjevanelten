@@ -1,19 +1,22 @@
-// // Toggle dropdown on click for mobile devices
-// document.querySelector('.dropbtn').addEventListener('click', function(event) {
-//     event.preventDefault();
-//     let dropdownContent = this.nextElementSibling;
-//     dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
-// });
+document.addEventListener("DOMContentLoaded", function() {
+    const dropbtn = document.querySelector(".dropbtn");
+    const dropdownContent = document.querySelector(".dropdown-content");
 
-// // Close dropdown when clicking outside
-// window.onclick = function(event) {
-//     if (!event.target.matches('.dropbtn')) {
-//         var dropdowns = document.querySelectorAll('.dropdown-content');
-//         dropdowns.forEach(function(dropdown) {
-//             dropdown.style.display = 'none';
-//         });
-//     }
-// };
+    dropbtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        dropdownContent.classList.toggle("show");
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.addEventListener("click", function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            if (dropdownContent.classList.contains('show')) {
+                dropdownContent.classList.remove('show');
+            }
+        }
+    });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     var encodedPhone = 'MDYgNDIyIDY1IDQ2MA=='; 
     var encodedAddress = 'SnVsaWFuYWxhYW4gNzAsIDM4NDMgQ0MgSGFyZGVyd2lqaw=='; 

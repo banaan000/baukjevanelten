@@ -39,7 +39,6 @@ header {
     justify-content: center; /* Center header content horizontally */
 }
 
-
 .header-content {
     display: flex;
     align-items: center; /* Vertically center logo and nav items */
@@ -101,7 +100,7 @@ nav ul li a.selected {
     display: inline-block;
 }
 
-/* Dropdown button styling (in this case, "MORE") */
+/* Dropdown button styling (in this case, "MEER") */
 .dropdown .dropbtn {
     display: block;
     font-family: 'UglyQua', Arial, sans-serif;
@@ -146,7 +145,7 @@ nav ul li a.selected {
     display: block;
 }
 
-/* Maintain hover styles on the "MORE" button */
+/* Maintain hover styles on the "MEER" button */
 .dropdown:hover .dropbtn {
     border: 2px solid #ffffff;
     border-radius: 5px;
@@ -309,7 +308,6 @@ main {
     background-size: cover;
 }
 
-
 .button-container {
     display: flex;
     flex-direction: column; /* Stack buttons vertically */
@@ -381,7 +379,6 @@ main {
     color: #ff6d00;
 }
 
-
 @font-face {
     font-family: 'UglyQua';
     src: url('fonts/UglyQua.ttf') format('truetype'); 
@@ -434,18 +431,40 @@ main {
     .social-item {
         font-size: 20px;
     }
+
     .button {
         flex: 1 1 auto; /* Allow buttons to grow/shrink and fit within container */
         margin: 5px 0; /* Vertical spacing on smaller screens */
     }
-    .home-page,
-    .massagetherapie-page,
-    .hathayoga-page,
-    .workshops-page,
-    .overmij-page,
-    .contact-page{
-        background-position: 25% 75%;
-        background-size: cover; /* Ensure the image covers the background */
+
+    /* Specific mobile background images */
+    .home-page {
+        background: url('images/home-mobile.jpg') no-repeat center center fixed;
+        background-size: cover;
     }
 
+    .massagetherapie-page {
+        background: url('images/home-mobile.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .hathayoga-page {
+        background: url('images/yoga3-mobile.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .workshops-page {
+        background: url('images/yoga2-mobile.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .overmij-page {
+        background: url('images/banner.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .contact-page {
+        background: url('images/banner.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
 }
